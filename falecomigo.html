@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="_css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="_css/form.css"/>
+</head>
+<script src="_javascript/functions.js"></script>
+<body>
+    <div id="interface">
+        <header id="superior">
+            <hgroup>
+                <h1>Linha do tempo</h1>
+                <h2>Fale comigo</h2>
+                <h3>João Pedro Leite Marotinho</h3>
+            </hgroup>
+            <img id="icone" src="_imagem/casa2.png"/>
+            <nav id="menu">
+                <h1>Fale Comigo</h1>
+                <ul>
+                    <li onmouseover="mudaFoto('_imagem/casa2.png')" onmouseout="mudaFoto('_imagem/contato.png')"><a href="index.html">Home</a></li>
+                    <li onmouseover="mudaFoto('_imagem/urso.png')" onmouseout="mudaFoto('_imagem/contato.png')"><a href="infancia1.html">Primeira Infância</a></li>
+                    <li onmouseover="mudaFoto('_imagem/bicicleta.png')" onmouseout="mudaFoto('_imagem/contato.png')"><a href="infancia-adolescencia.html">Infância e Adolescência</a></li>
+                    <li onmouseover="mudaFoto('_imagem/carro.png')" onmouseout="mudaFoto('_imagem/contato.png')"><a href="juventude.html">Jovem</a></li>
+                    <li onmouseover="mudaFoto('_imagem/contato.png')" onmouseout="mudaFoto('_imagem/contato.png')"><a href="falecomigo.html">Fale Comigo</a></li>
+                </ul>
+            </nav>
+        </header>
+        <article>
+            <form method="POST" id="fContato" action="mailto:jplmarotinho22@gmail.com">
+                <fieldset id="usuario">
+                    <legend>Informações do usuário</legend>
+                    <p>Nome:<input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"/></p>
+                    <p>Email:<input type="email" name="tMail" id="cMail" size="20" maxlength="40"/></p>
+                    <p>Data de nascimento:<input type="date" name="tNasc" id="cNasc"/></p>
+                    <fieldset id="sexo">
+                        <legend>Sexo</legend>
+                        <input type="radio" name="tSexo" id="cMasc"/><label for="cMasc">Masc</label>
+                        <input type="radio" name="tSexo" id="cFem"/><label for="cFem">Fem</label>
+                    </fieldset>
+                </fieldset>
+            </form>
+        </article>
+    </div>
+    <footer id="rodape"><p>Por João Pedro Leite Marotinho/2020</p></footer>
+</body>
+</html>
